@@ -6,11 +6,10 @@
 # 100 -> 1 (1 + 0 + 0) 
 
 n = int(input("введите число "))
-m = int(n % 10)
+m = n % 10
 print(m)
-l = int(n/10 % 10)
+l = n//10 % 10
 print(l)
-v = int(n/100 % 10)
+v = n//100 % 10
 print(v)
-sum = int(m + l + v)
-print("Сумма цифр в числе", n, "=", sum)
+print("Сумма цифр в числе", n, "=", m + l + v)
