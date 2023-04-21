@@ -22,5 +22,4 @@ for i in range(1, len(lst)):
     if lst[i] - x <= near - x:
         near = lst[i]
 print(lst)
-print(i)
 print(near)
