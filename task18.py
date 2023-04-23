@@ -16,10 +16,9 @@ n = int(input("Введите длинну строки "))
 lst = [random.randint(0, 10) for i in range(n)]
 
 x = int(input("Введите искомое число "))
-
-for i in range(1, len(lst)):
-    near = lst[i]
-    if lst[i] - x <= near - x:
+near = lst[0]
+for i in range(0, len(lst)):
+    if abs(lst[i] - x) < abs(near - x):
         near = lst[i]
 print(lst)
 print(near)

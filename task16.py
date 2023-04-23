@@ -8,9 +8,9 @@ import random
 n = int(input("Введите длинну строки "))
 lst = [random.randint(-2, 2) for i in range(n)]
 count = 0
-x = int(input("Введите искомое число"))
+x = int(input("Введите искомое число "))
 
-for i in range(1, len(lst)):
+for i in range(0, n):
     if lst[i] == x:
         count += 1
 print(lst)
